@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Table Styling, tbody odd and even changes the color of every other cell in my tables -->
+    <style>
+
+        table {
+            border-collapse: collapse;
+            align-items: center;
+        }
+        td, th {
+         border: 2px solid #000000;
+         text-align: center;
+         padding: 5px;
+         color:black;
+        }
+        thead tr {                      
+            background-color:white;
+        }
+        tbody tr:nth-child(odd){  /* this class is for alternating color in the tables */
+            background-color:lightgray;
+        }
+        tbody tr:nth-child(even){
+            background-color: #BCCEB0;
+        }
+        .navbar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #C56C39;
+                position:sticky;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+
+        }
+        .navbar ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+
+        }
+        .navbar ul li{
+            float:left;
+        }
+        .navbar ul li a:hover {
+            background-color:#3c1d0c;
+        }
+        
+        .row-cols-2 > *{ /* this class allows for the text and photo to be placed inline */
+        flex: 0 0 auto;
+        width: 50%;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -0.75rem;
+            margin-left: -0.75rem;
+            }
+        .col {
+        flex: 1 0 0%;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+            }
+    </style>
+    <title>National Parks by Region</title>
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul style="list-style-type: none;">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WYpark.html">Wyoming National Parks</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </div>
+
+
+    <ul>                                    <!-- National parks by region, with visitor numbers based on 2024 numbers by the NPS -->  
+        <h1>National Parks By Region</h1>   <!-- states with one park have a link to their wikipeida page. -->
+                                            <!-- While states with mutiple will link to a new page with all their parks, more park info, pictures and wiki link -->
+                                         <!-- I will also make little info articles on one parks, Yellowstone, with some picutres from my trip years ago-->
+     <div class="row row-cols-2">
+        <div class="col">                                                                            
+            <table>                             
+            <h2>Alaska</h2>        
+            <tr>
+                <th>State</th>
+                <th>Total parks</th>
+                <th>Visitors</th>
+            </tr>
+            <tr>
+                <td><a href="AKpark.html">Alaska</a></td>
+                <td>8</td>
+                <td>466k</td>
+            </tr>
+            </table>
+             <table>
+            <h2>Northeast</h2>
+            <tr>
+                <th>State</th>
+                <th>Park name</th>
+                <th>Visitors</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Acadia_National_Park">Maine</a></td>
+                <td>Acadia National Park</td>
+                <td>3.96M</td>
+            </tr>
+        </table>
+        <table>
+            <h2>Midwest</h2>
+            <tr>
+                <th>State/Park</th>
+                <th>Total Parks</th>
+                <th>Visitors</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Indiana_Dunes_National_Park">Indiana Dunes</a></td>
+                <td>1</td>
+                <td>2.77M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Isle_Royale_National_Park">MI/Isle Royale</a></td>
+                <td>1</td>
+                <td>29k</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Voyageurs_National_Park">MN/Voyageurs</a></td>
+                <td>1</td>
+                <td>199k</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Gateway_Arch_National_Park">MO/Gateway Arch</a></td>
+                <td>1</td>
+                <td>2.5M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Theodore_Roosevelt_National_Park">ND/Theodore Roosevelt</a></td>
+                <td>1</td>
+                <td>733k</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Cuyahoga_Valley_National_Park">OH/Cuyhoga Valley</a></td>
+                <td>1</td>
+                <td>2.9M</td>
+            </tr>
+            <tr>
+                <td><a href="SDpark.html">South Dakota</a></td>
+                <td>2</td>
+                <td>1.6M</td>
+            </tr>
+        </table>
+        <table>
+            <h2>South</h2>
+            <tr>
+                <th>State/Park</th>
+                <th>Total Parks</th>
+                <th>Visitors</th>
+            </tr>          
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Hot_Springs_National_Park">AR/Hot Springs</a></td>
+                <td>1</td>
+                <td>2.46M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Mammoth_Cave_National_Park">KY/Mammoth Cave</a></td>
+                <td>1</td>
+                <th>747k</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Great_Smoky_Mountains_National_Park">NC and TN/Great Smoky Mountains</a></td>
+                <td>1</td>
+                <td>12.2M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Congaree_National_Park">SC/Congree</a></td>
+                <td>1</td>
+                <td>242k</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Shenandoah_National_Park">VA/Shenandoah</a></td>
+                <td>1</td>
+                <td>1.7M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/New_River_Gorge_National_Park_and_Preserve">WV/New River Gorge</a></td>
+                <td>1</td>
+                <td>1.8M</td>
+            </tr>
+            <tr>      
+                <td><a href="https://en.wikipedia.org/wiki/Big_Bend_National_Park">TX/Big Bend</a></td>
+                <td>1</td>
+                <td>561k</td>
+            </tr>     
+        </table>
+        <table>
+            <h2>West</h2>
+            <tr>
+                <th>State/Park</th>
+                <th>Total Parks</th>
+                <th>Visitors</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Grand_Canyon_National_Park">AZ/Grand Canyon</a></td>
+                <td>1</td>
+                <td>4.9M</td>
+            </tr>
+            <tr>
+                <td><a href="calipark.html">California</a></td>
+                <td>9</td>
+                <td>12.1M</td>
+            </tr>
+            <tr>
+                <td><a href="CO_park.html">Colorado</a></td>
+                <td>4</td>
+                <td>5.4M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Hawai%CA%BBi_Volcanoes_National_Park">HI/Hawaii Volcanoes</a></td>
+                <td>1</td>
+                <td>1.4M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)">MT/Glacier</a></td>
+                <td>1</td>
+                <td>3.2M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Great_Basin_National_Park">NV/Great Basin</a></td>
+                <td>1</td>
+                <td>152k</td>
+            </tr>
+            <tr>
+                <td><a href="NMpark.html">New Mexico</a></td>
+                <td>2</td>
+                <td>1.1M</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Crater_Lake_National_Park">OR/Crater Lake</a></td>
+                <td>1</td>
+                <td>504k</td>
+            </tr>
+            <tr>
+                <td><a href="UTpark.html">Utah</a></td>
+                <td>5</td>
+                <td>11.1M</td>
+            </tr>
+            <tr>
+                <td><a href="WApark.html">Washington</a></td>
+                <td>3</td>
+                <td>5.35M</td>
+            </tr>
+            <tr>
+                <td><a href="WYpark.html">Wyoming</a></td>
+                <td>2</td>
+                <td>8.3M</td>
+            </tr>
+        </table>
+        <table>
+            <h2>Other Parks</h2>
+            <tr>
+                <th>Location</th>
+                <th>Park</th>
+                <th>Visitors</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Virgin_Islands_National_Park">U.S Virgin Islands</a></td>
+                <td>Virgin Islands</td>
+                <td>423k</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/National_Park_of_American_Samoa">American Samoa</a></td>
+                <td>American Samoa Islands</td>
+                <td>22k</td>
+            </tr>
+        </table>
+
+        </div>
+        <div class="col">
+            <img style="width:350px; height:350px; ;" src="photo/npslogo.png" alt="npslogo">
+        </div>
+    </div>
+       
+
+
+
+
+
+</ul>
+</body>
+
+<footer style="padding: 3px; font-size: 12px; color:black; background-color:darkgray; line-height:1px">
+ <p>© 2026 Philip Harris</p>
+ <p>phh6@uakron.edu</p>
+ <p>Hyperlinks and visitor data from 
+ <a href="https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States">Wikipedia</a></p>
+</footer>
+
+<script>
+    alert("Donate to the National Park Service and help preserve our parks for the future! \nhttps://www.pay.gov/public/form/start/1508357971")
+</script>

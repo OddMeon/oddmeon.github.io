@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .gallery{
+            transform: scale(0.8);
+            display: grid;
+            grid-template-columns:repeat(2, minmax(0,1fr));
+            column-gap:10px;
+            row-gap:10px;
+        }
+
+        .gallery img {
+            width:100%;
+            height:auto;
+            object-fit:cover;
+            display:block;
+            border:2px solid white;
+        }
+        .info li {
+            line-height:35px;
+            font-weight:bold;
+        }
+    </style>
+
+    <title>Wyoming National Parks</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WYpark.html">Wyoming National Parks</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <h1 style="text-align:center">Yellowstone National Park</h1>
+    <fig>
+        <img src="photo/ystone1.jpg" alt="yellowstone trip geyser area" style="display:block; width:900px; height:400px; margin:auto">
+        <figcaption style="padding:10px 10px; text-align:center">Norris Geyser Basin 2015</figcaption>
+    </fig>
+    <div style="display: flex; align-items:center; justify-content: center;">
+        <div style="width:50%; background-color:#6F4930;">
+            <h2 style="padding-left: 40px;">Information:</h2>
+
+            <ul style="list-style-type:none">
+                <div class="info">
+                <li style="line-height:0px;">Locations: Wyoming, Montana and Idaho<br></li>
+                    <p style="font-size:10px;">Note: While three states are listed here about 96% of Yellowstone is in Wyoming</p>
+                    <li>Date Established: March 1, 1872 by Ulyssses S. Grant</li>
+                    <li>Area: 2,219,791 acres</li>
+                    <li>Known For: The first national park established and its many geothermal features such as geysers</li>
+                    <li>Visitors: 4,744,353</li>
+            </div>
+            </ul>
+        </div>
+    </div>       
+
+
+
+    <fig class="gallery">
+         <img src="photo/ystone.jpg" alt="River">
+         <img src="photo/ystone2.jpg" alt="Waterfall">
+         <img src="photo/ystone3.jpg" alt="Porcelian Basin">
+         <img src="photo/ystone4.jpg" alt="Gibbon Falls">
+            <figcaption>From Left to right: River near Calcite Springs, Gibbon Falls, Porcelian Basin and Gibbon River</figcaption>
+    
+    </fig>
+
+    <br>
+
+    <h2 style="text-align:Center;">Grand Teton</h2>
+
+    <div class="center">
+    <fig>
+        <img src="photo/grtet.jpg" alt="grand teton mountain">
+            <figcaption style="text-align:Center;"><br>Grand Teton Mountains</figcaption>
+    </fig>
+    </div>
+    <br>
+
+    <div style="display: flex; align-items:center; justify-content: center;">
+        <div style="width:50%; background-color:#6F4930;">
+            <h2 style="padding-left: 40px;">Information:</h2>
+
+            <ul style="list-style-type:none">
+                <div class="info">
+                    <li>Locations: Teton County, Wyoming<br></li>
+                    <li>Date Established: February 26, 1929  </li>
+                    <li>Area: 310,000 acres</li>
+                    <li>Known For: Dramatic, jagged moutain peaks and pristine lakes</li>
+                    <li>Visitors: 2,806,223</li>
+            </div>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+</body>
+
+<footer style="padding: 3px; font-size: 10px; color:black; background-color:darkgray; line-height:1px">
+ <p>© 2026 Philip Harris</p>
+ <p>phh6@uakron.edu</p>
+ <p>Hyperlinks and visitor data from 
+ <a href="https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States">Wikipedia</a></p>
+</footer>
+
+
+
+
+
+
+
+
+
+</html>
